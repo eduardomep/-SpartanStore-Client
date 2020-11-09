@@ -42,7 +42,7 @@ function createUser(){
             // Verificando estado de respuesta y cambiando vista a login
             if(res.state == "ok"){
                 window.alert("Tu usuario ha sido creado con éxito")
-                window.location = "/ui/login.html"
+                window.location = "/SpartanStore-Client/login.html"
             }
             else{
                 window.alert("El nombre de usuario no está disponible")
@@ -124,7 +124,7 @@ function login(){
             // Verificando estado de respuesta y cambiando vista a login
             if(res.state == "ok"){
                 window.alert(res.message)
-                window.location = "/ui/index.html"
+                window.location = "/SpartanStore-Client/index.html"
                 localStorage.setItem("logged", true);
                 localStorage.setItem("userName", userName);
                 localStorage.setItem("userRole", res.userRole);

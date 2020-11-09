@@ -3,7 +3,7 @@ let isLogged = localStorage.getItem("logged")
 let logoutBtn = document.querySelector(".logout")
 logoutBtn.addEventListener("click",function(){
     localStorage.clear(); 
-    window.location = "/ui/index.html"
+    window.location = "/SpartanStore-Client/index.html"
 
 })
 if(isLogged){
